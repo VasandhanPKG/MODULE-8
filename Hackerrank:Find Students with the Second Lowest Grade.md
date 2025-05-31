@@ -27,10 +27,24 @@ To write a Python program to:
 
 ## 💻  Program
 
-Add Code Here
+```
+N=int(input())
+records=[]
+for _ in range(N):
+    name=input()
+    grade=float(input())
+    records.append([name,grade])
+grades=sorted(set([grade for name,grade in records]))
+second_lowest_grade=grades[1]
+students_with_second_lowest=[name for name,grade in records if grade==second_lowest_grade]
+students_with_second_lowest.sort()
+for student in students_with_second_lowest:
+    print(student)
+```
 
 ## Output
+![image](https://github.com/user-attachments/assets/4e54964f-229e-4f75-b3dd-46a77e964498)
 
 ## Result
-
+Thus, the program has been execueted successfully.
 
